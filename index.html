@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="login.css.css">
+<head>
+  <title>Login Page</title>
+<script>
+    function Login()
+    {
+        var username = document.getElementById("user").value;
+        var password = document.getElementById("pass").value;
+        if(username=="123"&& password=="123")
+    {
+       window.location. href="homep.html";
+       
+
+    }
+        else
+        {
+            alert("incorrect to username or password");
+        }
+    }
+    function showpass(checkbox)
+    {
+        var username = document.getElementById("user");
+        var password = document.getElementById("pass");
+        if(checkbox.checked==true)
+    {
+           password.setAttribute("type", "text");
+    }
+    else
+    {
+        password.setAttribute("type", "password");
+    }
+    }
+</script>
+
+</head>
+<body>     <diV class="log">
+        <h1 class="login"> LOGIN</h1>
+        
+            <div class="inputs">
+                <input class="inputuser"id="user" type="text" placeholder="Username" >
+                <input class="inputuser" id="pass"type="password" placeholder="Password">
+                    <div><input type="checkbox"onclick="showpass(this)" >
+                        show password
+                    </div>
+                
+                <button class="btn" onclick="Login()">LOGIN</button>
+                <div class="forgot">
+                    <a href="">forgot password</a>
+                </div>
+                        </div>
+            </div> 
+        </div>
+    
+    
+</body>
